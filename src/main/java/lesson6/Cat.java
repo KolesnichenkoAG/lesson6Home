@@ -1,11 +1,11 @@
 package lesson6;
     public class Cat extends Animal {
         String color;
-        private int distance;
-        public Cat (String name, String color, int distance) {
+        public Cat (String name, String color, int distancerun) {
             super(name);
+            this.name = name;
             this.color = color;
-            this.distance = distance;
+            this.distancerun = distancerun;
         }
         @Override
         public void animalInfo() {
@@ -13,11 +13,11 @@ package lesson6;
         }
         @Override
         public void run() {
-            if (distance > 200) {
-            System.out.println(name + " не может бежать " + distance + " метров");
+            if (distancerun > 200) {
+            System.out.println(name + " не может бежать " + distancerun + " метров");
             }
             else
-            System.out.println(name + " пробежал " + distance + " метров");
+            System.out.println(name + " пробежал " + distancerun + " метров");
         }
         @Override
         public void swim() {

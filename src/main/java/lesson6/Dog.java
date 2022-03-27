@@ -2,11 +2,12 @@ package lesson6;
 
 public class Dog extends Animal {
     String color;
-    private int distance;
-    public Dog (String name, String color, int distance) {
+    public Dog (String name, String color, int distancerun, int barrier) {
         super(name);
+        this.name = name;
         this.color = color;
-        this.distance = distance;
+        this.distancerun = distancerun;
+        this.barrier = barrier;
     }
     @Override
     public void animalInfo() {
@@ -14,18 +15,18 @@ public class Dog extends Animal {
     }
     @Override
     public void run() {
-        if (distance > 500) {
-            System.out.println(name + " не может бежать " + distance + " метров");
+        if (distancerun > 500) {
+            System.out.println(name + " не может бежать " + distancerun + " метров");
         }
         else
-            System.out.println(name + " пробежал " + distance + " метров");
+            System.out.println(name + " пробежал " + distancerun + " метров");
     }
     @Override
     public void swim() {
-        if (distance > 10) {
-            System.out.println(name + " не может проплыть " + distance + " метров");
+        if (barrier > 10) {
+            System.out.println(name + " не может проплыть " + barrier + " метров");
         }
         else
-        System.out.println(name + " проплыл " + distance + " метров");
+        System.out.println(name + " проплыл " + barrier + " метров");
     }
 }
