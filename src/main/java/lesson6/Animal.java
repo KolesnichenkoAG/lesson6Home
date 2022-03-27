@@ -15,7 +15,6 @@ public class Animal {
     public void swim() {
         System.out.println("Животное плывет");
     }
-
 }
 
 
