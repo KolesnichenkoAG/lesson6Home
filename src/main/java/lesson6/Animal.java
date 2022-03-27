@@ -12,10 +12,6 @@ public class Animal {
         this.barrier = barrier;
     }
 
-    public Animal(String name) {
-
-    }
-
     public void animalInfo() {
         System.out.println("Животное: " + name + " Цвет " + color);
     }

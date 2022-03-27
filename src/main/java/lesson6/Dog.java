@@ -2,11 +2,7 @@ package lesson6;
 
 public class Dog extends Animal {
     public Dog (String name, String color, int distancerun, int barrier) {
-        super(name);
-        this.name = name;
-        this.color = color;
-        this.distancerun = distancerun;
-        this.barrier = barrier;
+        super(name, color, distancerun, barrier);
     }
     @Override
     public void animalInfo() {
