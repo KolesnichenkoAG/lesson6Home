@@ -1,7 +1,6 @@
 package lesson6;
 
 public class Dog extends Animal {
-    String color;
     public Dog (String name, String color, int distancerun, int barrier) {
         super(name);
         this.name = name;

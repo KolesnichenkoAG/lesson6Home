@@ -1,6 +1,5 @@
 package lesson6;
     public class Cat extends Animal {
-        String color;
         public Cat (String name, String color, int distancerun) {
             super(name);
             this.name = name;
@@ -9,7 +8,7 @@ package lesson6;
         }
         @Override
         public void animalInfo() {
-            System.out.println("Кот: " + name + "  цвет " + color);
+            System.out.println("Кот: " + name + " Цвет " + color);
         }
         @Override
         public void run() {
